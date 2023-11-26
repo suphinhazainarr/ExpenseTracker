@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <div class="budget">
+                <h2>Budget</h2>
+                <input type="text" placeholder="Enter Total Amount">
+                <button>Set Budget</button>
+            </div>
+            <div class="expense">
+                <h2>Expenses</h2>
+                <input type="text" placeholder="Enter Title of product">
+                <input type="text" placeholder="Enter Cost of product">
+                <button>Check Amount</button>
+            </div>
+        </div>
+        <div class="blue-container">
+            <div class="col-1">
+                <h2>Total Budget</h2>
+                <h3>0</h3>
+            </div>
+            <div class="col-2">
+                <h2>Total Budget</h2>
+                <h3>0</h3>
+            </div>
+            <div class="col-3">
+                <h2>Balance</h2>
+                <h3>0</h3>
+            </div>
+        </div>
+        <!-- <div class="expense-list">
+            <h2>Expense List</h2>
+            <div class="list">
+                <div class="product">
+                    <h3>Rent</h3>
+                    <h3>Rent</h3>
+                    <h3>Rent</h3>
+                </div>
+                <div class="price">
+                    <h3>2000</h3>
+                    <h3>2000</h3>
+                    <h3>2000</h3>
+                </div>
+                <div class="edit-icon"></div>
+                <div class="edit-icon">
+                    <i class="fas fa-edit" id="editIcon"></i>
+                    <i class="fas fa-edit" id="editIcon"></i>
+                    <i class="fas fa-edit" id="editIcon"></i>
+                </div>
+                <div class="delete-button">
+                    <i class="fas fa-trash-alt" id="deleteIcon"></i>
+                    <i class="fas fa-trash-alt" id="deleteIcon"></i>
+                    <i class="fas fa-trash-alt" id="deleteIcon"></i>
+                </div>
+            </div> -->
+            <div class="expense-list">
+                <h2>Expense-list</h2>
+                <ul class="product-list">
+                    <li>
+                        <span class="product-name">Product A</span>
+                        <span class="product-price">$10.99</span>
+                        <span class="edit-button"><i class="fas fa-edit" id="editIcon"></i> </span>
+                        <span class="delete-button"><i class="fas fa-trash-alt" id="deleteIcon"></i> </span>
+                    </li>
+                    <li>
+                        <span class="product-name">Product B</span>
+                        <span class="product-price">$19.99</span>
+                        <span class="edit-button"><i class="fas fa-edit" id="editIcon"></i> </span>
+                        <span class="delete-button"><i class="fas fa-trash-alt" id="deleteIcon"></i> </span>
+                    </li>
+                    <li>
+                        <span class="product-name">Product C</span>
+                        <span class="product-price">$15.49</span>
+                        <span class="edit-button"><i class="fas fa-edit" id="editIcon"></i> </span>
+                        <span class="delete-button"><i class="fas fa-trash-alt" id="deleteIcon"></i> </span>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

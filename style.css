@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    position: relative;
+    margin: 100px auto 30px;
+    width: 720px;
+}
+.input-section{
+    margin-top: -90px;
+    display: flex;
+    justify-content: space-between ;
+}
+.budget{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 30px 10px;
+    width: 300px;
+    max-height: 300px;
+    background: #fff;
+    border: 2px solid #ccc; /* Add a border around the box */
+    border-radius: 5px; /* Add rounded corners for the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+.budget h2{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+.budget input{
+    border: solid black 1px;
+    margin: 20px 0px;
+    padding: 9px;
+    border-radius:3px;
+    background: #fff;
+    border: 2px solid #ccc; /* Add a border around the box */
+  border-radius: 5px; /* Add rounded corners for the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+.budget button{
+    width: 150px;
+    background-color: lightblue; /* Set the background color to light blue */
+    padding: 5px 5px; /* Adjust padding for the button */
+    border: 1px solid #ccc; /* Add a border for the button */
+    border-radius: 5px; /* Add rounded corners for the button */
+    color: #333; /* Set text color */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: none;
+} 
+.budget button:hover{
+    background-color: skyblue; /* Change background color on hover */
+    color: #000;
+}
+
+.expense{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    background: #fff;
+    padding: 30px 10px;
+    border: 2px solid #ccc; /* Add a border around the box */
+    border-radius: 5px; /* Add rounded corners for the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+.expense input{
+    border: solid black 1px;
+    margin-top: 20px;
+    padding: 9px;
+    border-radius:3px;
+    background: #fff;
+    border: 2px solid #ccc; /* Add a border around the box */
+  border-radius: 5px; /* Add rounded corners for the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+.expense button{
+    width: 150px;
+    background-color: lightblue; /* Set the background color to light blue */
+    padding: 7px 5px; /* Adjust padding for the button */
+    border: 1px solid #ccc; /* Add a border for the button */
+    border-radius: 5px; /* Add rounded corners for the button */
+    color: #333; /* Set text color */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: none;
+    margin: 20px 0;
+}
+.expense button:hover{
+    background-color: skyblue; /* Change background color on hover */
+    color: #000;
+}
+.expense h2{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+.blue-container{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px; /* Add rounded corners for the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.col-1,
+.col-2,
+.col-3, h2{
+    background-color: lightblue;
+    font-size: 20px;
+    font-weight: 150px;
+}
+.col-1,
+.col-2,
+.col-3, h3{
+    font-size: px;
+    font-weight: 10px;
+    text-align: center;
+    background-color: lightblue;
+}
+#editIcon {
+    color: rgb(8, 8, 17); /* Set the color of the icon */
+    font-size: 24px; /* Set the font size of the icon */
+  }
+#deleteIcon {
+    font-size: 24px; /* Set the font size of the icon */
+  }
+  
+
