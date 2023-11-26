@@ -126,11 +126,58 @@
     background-color: lightblue;
 }
 #editIcon {
-    color: rgb(8, 8, 17); /* Set the color of the icon */
-    font-size: 24px; /* Set the font size of the icon */
-  }
+    color: lightblue; /* Set the color of the icon */
+    font-size: 24px; 
+    background-color: #fff;
+}
 #deleteIcon {
-    font-size: 24px; /* Set the font size of the icon */
-  }
+    color: lightblue; /* Set the color of the icon */
+    font-size: 24px; 
+    background-color: #fff;  }
   
+  /* Style for the expense list container */
+.expense-list {
+    background-color: #fff; /* Set the background color to light blue */
+    padding: 20px; /* Add padding around the content */
+    border-radius: 8px; /* Add border radius for a rounded appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    font-family: 'Arial', sans-serif; /* Use a specific font style for the list */
+}
+
+/* Style for the product list */
+.product-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    background-color: #fff;
+}
+.expense-list h2{
+    background-color: #fff;
+
+}
+
+/* Style for list items */
+.product-list li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    background-color: #fff; /* Set background color for list items */
+    padding: 10px; /* Add padding around list items */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between elements */
+
+}
+.product-name {
+    font-weight: bold; /* Make the product name bold */
+    margin-right: 10px; 
+    background-color: #fff;    
+}
+.product-price{
+    background-color: #fff;
+}
+.edit-button,
+.delete-button {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    /* Additional styles for edit and delete buttons */
+}
+
+
 
