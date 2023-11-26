@@ -1,9 +1,10 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: lightgray;
+    background-color: #f7f9fd;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .container{
     position: relative;
     margin: 100px auto 30px;
@@ -107,8 +108,9 @@
     justify-content: space-between;
     background-color: lightblue;
     padding: 10px;
+    border: 2px solid #ccc;
     border-radius: 5px; /* Add rounded corners for the box */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
 }
 .col-1,
 .col-2,
@@ -125,22 +127,17 @@
     text-align: center;
     background-color: lightblue;
 }
-#editIcon {
+.edit-button i,.delete-button i {
     color: lightblue; /* Set the color of the icon */
     font-size: 24px; 
     background-color: #fff;
 }
-#deleteIcon {
-    color: lightblue; /* Set the color of the icon */
-    font-size: 24px; 
-    background-color: #fff;  }
-  
-  /* Style for the expense list container */
 .expense-list {
+    border: 2px solid #ccc;
     background-color: #fff; /* Set the background color to light blue */
     padding: 20px; /* Add padding around the content */
-    border-radius: 8px; /* Add border radius for a rounded appearance */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 5px; /* Add rounded corners for the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
     font-family: 'Arial', sans-serif; /* Use a specific font style for the list */
 }
 
@@ -168,8 +165,22 @@
 .product-name {
     font-weight: bold; /* Make the product name bold */
     margin-right: 10px; 
-    background-color: #fff;    
+    background-color: #fff;  
+    margin-left: 6px ;  
 }
+.product-name::before {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Set position to absolute */
+    margin-left: 9px;
+    
+    left: 15px; /* Adjust the position from the left */
+    transform: translateY(-20%); /* Center vertically */
+    width: 3px; /* Set width of the decoration */
+    height: 25px; /* Set height of the decoration */
+    background-color: lightblue; /* Set color for the decoration */
+    border-radius:0; /* Create a circular shape */
+}
+
 .product-price{
     background-color: #fff;
 }
@@ -177,6 +188,9 @@
 .delete-button {
     cursor: pointer; /* Change cursor to pointer on hover */
     /* Additional styles for edit and delete buttons */
+}
+.edit-button i:hover,.delete-button i:hover {
+    color: skyblue; /* Change color to sky blue on hover */
 }
 
 
