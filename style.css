@@ -144,27 +144,34 @@
 /* Style for the product list */
 .product-list {
     list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
+    padding: 10px; /* Remove default padding */
     background-color: #fff;
 }
 .expense-list h2{
     background-color: #fff;
-
 }
 
 /* Style for list items */
 .product-list li {
     margin-bottom: 10px; /* Add spacing between list items */
     background-color: #fff; /* Set background color for list items */
-    padding: 10px; /* Add padding around list items */
-    display: flex; /* Use flexbox for layout */
+    padding-top: 10px; /* Add padding around list items */
+    display: flex; 
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space between elements */
+    justify-content:space-between;
+    overflow: hidden; /* Prevent text overflow */
+
 
 }
 .product-name {
+    width: 150px;
+    max-width: 150px;
     font-weight: bold; /* Make the product name bold */
-    margin-right: 10px; 
+    margin-right: 0px; 
     background-color: #fff;  
     margin-left: 6px ;  
 }
@@ -182,8 +189,11 @@
 }
 
 .product-price{
-    display: flex;
     background-color: #fff;
+    text-align: left;
+}
+.product-price{
+    width: 250px;
 }
 .edit-button,
 .delete-button {
