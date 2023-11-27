@@ -182,16 +182,17 @@
 }
 
 .product-price{
+    display: flex;
     background-color: #fff;
 }
 .edit-button,
 .delete-button {
-    cursor: pointer; /* Change cursor to pointer on hover */
-    /* Additional styles for edit and delete buttons */
+    cursor: pointer; 
 }
 .edit-button i:hover,.delete-button i:hover {
-    color: skyblue; /* Change color to sky blue on hover */
+    color: skyblue; 
 }
+
 
 
 
