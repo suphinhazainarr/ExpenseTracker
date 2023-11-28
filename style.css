@@ -204,5 +204,105 @@
 }
 
 
+/* Your other CSS styles remain unchanged */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+        margin: 50px auto 20px; /* Modify margins */
+    }
+
+    .input-section {
+        flex-direction: column; /* Stack input sections vertically */
+        margin-top: -60px; /* Adjust margin-top */
+    }
+
+    .budget, .expense {
+        width: 90%; /* Adjust width for smaller screens */
+        max-height: none; /* Remove maximum height */
+        margin: 20px auto; /* Modify margin */
+    }
+
+    .budget h2, .expense h2 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .budget input, .expense input {
+        width: 100%; /* Adjust input width */
+        margin-top: 10px; /* Modify margin */
+    }
+
+
+    .budget button, .expense button {
+        width: 50%; /* Adjust button width */
+        margin: 15px 0; /* Modify margin */
+    }
+
+    .blue-container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row; /* Stack columns vertically */
+        margin: 15px 0; /* Modify margin */
+        margin-left: 10px;
+        padding: 10px; /* Adjust padding */
+    }
+
+    .col-1, .col-2, .col-3, h2, h3 {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .product-list li {
+        margin-bottom: 20px; /* Modify margin */
+        padding: 15px; /* Adjust padding */
+        flex-direction: row; /* Arrange items vertically */
+        justify-content: space-between;
+    }
+
+    .product-name::before {
+         /* Hide pseudo-element on smaller screens */
+    }
+
+    
+
+    .expense-list {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 20px auto; /* Center the expense list */
+    }
+    
+
+    .product-name {
+        font-size: 13px;
+        width: 80%; /* Set width to span the full container */
+        max-width: none; /* Remove maximum width */
+        margin: 6px 0; /* Adjust margin for better spacing */
+    }
+
+    .product-price {
+        width: 90%; /* Set width to span the full container */
+        text-align: left; /* Align text to the left */
+    }
+
+    .edit-button,
+    .delete-button {
+        padding-left: 5px;
+        margin-top: 6px; /* Add space between buttons */
+        text-align: right; /* Align buttons to the right */
+    }
+
+    .edit-button i,
+    .delete-button i {
+        font-size: 20px; /* Decrease icon size for smaller screens */
+    }
+
+    .budget input, .expense input {
+        width: 80%; /* Reduce input width for smaller screens */
+        margin-top: 10px; /* Modify margin */
+    }
+
+    
+}
+
+
 
 
