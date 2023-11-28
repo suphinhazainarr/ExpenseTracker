@@ -2,19 +2,20 @@ const TotalInput = document.getElementById('total-input');
 const setBudgetBtn = document.getElementById('setBudget');
 const totalBudget = document.getElementById('total-budget');
 const expense = document.getElementById('expense');
-
+const balance = document.getElementById('balance');
 const productName = document.getElementById('product-name');
 const productCost = document.getElementById('product-cost');
 const checkAmountBtn = document.getElementById('checkAmount-button');
 const productList = document.querySelector('.product-list');
-
+let calculatedBalance; // Declared globally
+let currentExpense;
 
 setBudgetBtn.addEventListener('click', () => {
     const newBudgetValue = parseInt(TotalInput.value);
-    const currentExpense = parseInt(expense.textContent);
+    currentExpense = parseInt(expense.textContent);
 
     if (!isNaN(newBudgetValue) && !isNaN(currentExpense)) {
-        const calculatedBalance = newBudgetValue - currentExpense;
+        calculatedBalance = newBudgetValue - currentExpense;
 
         totalBudget.textContent = `${newBudgetValue}`;
         balance.textContent = `${calculatedBalance}`;
@@ -24,14 +25,11 @@ setBudgetBtn.addEventListener('click', () => {
 });
 
 checkAmountBtn.addEventListener('click', () => {
-   
     const newProduct = productName.value;
     const newProductCost = parseInt(productCost.value);
-    
-    if(newProduct && !isNaN(newProductCost)){ 
-        console.log(newProduct);
-        console.log(newProductCost);
+    currentExpense = parseInt(expense.textContent); // Update currentExpense
 
+    if (newProduct && !isNaN(newProductCost) && !isNaN(calculatedBalance)) {
         const listItem = document.createElement('li');
 
         const productNameSpan = document.createElement('span');
@@ -57,11 +55,13 @@ checkAmountBtn.addEventListener('click', () => {
 
         productList.appendChild(listItem);
 
+        expense.textContent = currentExpense + newProductCost;
+        calculatedBalance = parseInt(totalBudget.textContent) - parseInt(expense.textContent);
+        balance.textContent = `${calculatedBalance}`;
 
         productName.value = '';
         productCost.value = '';
-        
     } else {
-        alert("Please enter valid product name and cost.");
+        alert("Please enter valid product name, cost, and set a budget first.");
     }
 });
